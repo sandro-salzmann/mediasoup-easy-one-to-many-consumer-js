@@ -5,12 +5,17 @@ import { io } from 'socket.io-client';
 
 process.env.DEBUG = "mediasoup*"; // for testing purposes
 
-export const useConsume = () => {
+type ConsumeOptions = {
+    url: string,
+    remoteVideoElId: string
+}
+
+export const useConsume = (options: ConsumeOptions) => {
     let device: mediasoup.Device;
     let consumerTransport: mediasoup.types.Transport;
     let remoteStream: MediaStream
 
-    const socket = io("http://localhost:3014/mediasoup");
+    const socket = io(`${options.url}/mediasoup`);
 
     const connect = () => {
         socket.on("connect_error", (err) => {
@@ -70,7 +75,7 @@ export const useConsume = () => {
                     break;
                 case "connected":
                     // @ts-ignore
-                    document.getElementById("remote-stream").srcObject = remoteStream
+                    document.getElementById(options.remoteVideoElId).srcObject = remoteStream
                     socket.emit("resume", () => {
                     });
                     break;
