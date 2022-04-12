@@ -29,6 +29,10 @@ export const useConsume = (options: ConsumeOptions) => {
                 loadDevice(rtpCapabilities);
             });
         });
+        socket.on("newProducer", () => {
+            if (consumerTransport) consumerTransport.close();
+            subscribe()
+        })
         socket.connect();
     }
 
