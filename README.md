@@ -13,11 +13,11 @@ npm install mediasoup-easy-one-to-many-consumer-js
 Call `useConsume` to setup a consumer using your options. `useConsume` will return functions that let you  establish the connection to the mediasoup router (`connect`) and start consuming the stream (`subscribe`).
 
 ```ts
-import { useConsume } from "mediasoup-easy-one-to-many-consumer-react";
+import { useConsume } from "mediasoup-easy-one-to-many-consumer-js";
 
 const { connect, subscribe } = useConsume({
-    url: "https://example.com:3014",
-    remoteVideoElId: "remote-stream"
+    url: "http://localhost:8080",
+    remoteVideoElId: "remote-stream",
 });
 
 // ...
