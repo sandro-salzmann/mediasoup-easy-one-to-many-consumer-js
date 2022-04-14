@@ -5,7 +5,7 @@ Video consumer of an easy to use one-to-many broadcasting tool based on mediasou
 ## Installation
 
 ```sh
-npm install mediasoup-easy-one-to-many-producer-js
+npm install mediasoup-easy-one-to-many-consumer-js
 ```
 
 ## Getting started
