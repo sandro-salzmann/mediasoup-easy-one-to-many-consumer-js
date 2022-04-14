@@ -1,4 +1,4 @@
-# mediasoup-easy-one-to-many-producer-js
+# mediasoup-easy-one-to-many-consumer-js
 
 Video consumer of an easy to use one-to-many broadcasting tool based on mediasoup.
 
