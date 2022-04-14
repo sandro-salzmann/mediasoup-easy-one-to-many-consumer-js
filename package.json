@@ -1,5 +1,5 @@
 {
-  "name": "mediasoup-easy-one-to-many-consumer-react",
+  "name": "mediasoup-easy-one-to-many-consumer-js",
   "version": "1.0.1",
   "description": "Video consumer of an easy to use one-to-many broadcasting tool based on mediasoup.",
   "main": "lib/index.js",
@@ -19,13 +19,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sandro-salzmann/mediasoup-easy-one-to-many-consumer-react.git"
+    "url": "git+https://github.com/sandro-salzmann/mediasoup-easy-one-to-many-consumer-js.git"
   },
   "keywords": [
     "Mediasoup",
     "One-To-Many",
     "Simple",
-    "React",
+    "Javascript",
     "Consumer",
     "Video"
   ],

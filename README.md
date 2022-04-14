@@ -1,1 +1,1 @@
-# mediasoup-easy-one-to-many-producer-react
+# mediasoup-easy-one-to-many-producer-js
